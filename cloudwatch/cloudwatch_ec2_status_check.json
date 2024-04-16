@@ -1,0 +1,29 @@
+{
+  "AlarmName": "instance-status-check-alram",
+  "AlarmDescription": "instance status check failed",
+  "MetricName": "StatusCheckFailed",
+  "Namespace": "AWS/EC2",
+  "Statistic": "Maximum",
+  "Period": 180,
+  "Threshold": 1,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+  "Dimensions": [
+    {
+      "Name": "InstanceId", 
+      "Value": "i-yourInstanceId"
+    }
+  ],
+  "EvaluationPeriods": 2,
+  "AlarmActions": [
+    "arn:aws:sns:ap-northeast-2:xxxxxxxxx:infra-warning-alarm"
+  ],
+  "Unit": "Percent",
+  "ActionsEnabled": true,
+  "OKActions": [
+    "arn:aws:sns:ap-northeast-2:xxxxxxxxx:infra-warning-alarm"
+  ],
+  "AlarmActions": [
+    "arn:aws:sns:ap-northeast-2:xxxxxxxxxx:infra-warning-alarm"
+  ]
+}
+
