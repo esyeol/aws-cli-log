@@ -1,2 +1,3 @@
-cloudwatch/config.json
+cloudwatch/cpu-limit.json
+cloudwatch/status-check.json
 ec2/config.json

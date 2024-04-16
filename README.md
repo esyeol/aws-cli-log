@@ -4,18 +4,14 @@
 
 > Install & Certifications
 
-
 ```bash
-#################################
-#       install aws cli         #
-#################################
+# install awscli 
+
 $ brew install awscli 
 $ which aws 
 $ aws --version 
 
-#################################
-#       configuration           #
-#################################
+# configuration
 
 $ aws configure
 
@@ -28,4 +24,7 @@ $ cd $HOME/.aws  # find which aws
 $ vi credentials 
 
 ```
- 
+
+Reference 
+
+[Link](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html)
